@@ -1,0 +1,26 @@
+{
+	"name": "newFileInsert",
+	"properties": {
+		"description": "Runs the trigger if a new file exists in the input folder of the raw container",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "NewPokedex",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/c0bab24d-870b-49f5-9e9b-9782d883062a/resourceGroups/pokemon-etl-rg/providers/Microsoft.Storage/storageAccounts/pokemonstorage001",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

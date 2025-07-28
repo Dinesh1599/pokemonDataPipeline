@@ -1,0 +1,105 @@
+{
+	"name": "updatePokedex",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "pseudo_legendary_pokemon.csv",
+				"container": "raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "National_Number",
+				"type": "String"
+			},
+			{
+				"name": "Gen",
+				"type": "String"
+			},
+			{
+				"name": "English_Name",
+				"type": "String"
+			},
+			{
+				"name": "Primary_Type",
+				"type": "String"
+			},
+			{
+				"name": "Secondary_Type",
+				"type": "String"
+			},
+			{
+				"name": "HP",
+				"type": "String"
+			},
+			{
+				"name": "Attack",
+				"type": "String"
+			},
+			{
+				"name": "Defense",
+				"type": "String"
+			},
+			{
+				"name": "Sp_Attack",
+				"type": "String"
+			},
+			{
+				"name": "Sp_Defense",
+				"type": "String"
+			},
+			{
+				"name": "Speed",
+				"type": "String"
+			},
+			{
+				"name": "Is_PseudoLegendary",
+				"type": "String"
+			},
+			{
+				"name": "Is_Legendary",
+				"type": "String"
+			},
+			{
+				"name": "Is_Mythical",
+				"type": "String"
+			},
+			{
+				"name": "Gigantamax",
+				"type": "String"
+			},
+			{
+				"name": "Mega_Evolution",
+				"type": "String"
+			},
+			{
+				"name": "Base_Total",
+				"type": "String"
+			},
+			{
+				"name": "Ability",
+				"type": "String"
+			},
+			{
+				"name": "Ability_2",
+				"type": "String"
+			},
+			{
+				"name": "Ability_3",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

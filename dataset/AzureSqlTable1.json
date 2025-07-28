@@ -1,0 +1,112 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "sno",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "National_Number",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Gen",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "English_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Primary_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Secondary_Type",
+				"type": "varchar"
+			},
+			{
+				"name": "HP",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Attack",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Defense",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Sp_Attack",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Sp_Defense",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Speed",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Is_PseudoLegendary",
+				"type": "bit"
+			},
+			{
+				"name": "Is_Legendary",
+				"type": "bit"
+			},
+			{
+				"name": "Is_Mythical",
+				"type": "bit"
+			},
+			{
+				"name": "Gigantamax",
+				"type": "bit"
+			},
+			{
+				"name": "Mega_Evolution",
+				"type": "bit"
+			},
+			{
+				"name": "Base_Total",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Ability",
+				"type": "varchar"
+			},
+			{
+				"name": "Ability_2",
+				"type": "varchar"
+			},
+			{
+				"name": "Ability_3",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "pokemon"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

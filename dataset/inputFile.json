@@ -1,0 +1,242 @@
+{
+	"name": "inputFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FileName": {
+				"type": "string",
+				"defaultValue": "pokemon_gen9_v3.csv"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().FileName",
+					"type": "Expression"
+				},
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "UniqeIdentifier",
+				"type": "String"
+			},
+			{
+				"name": "No.",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "name_url",
+				"type": "String"
+			},
+			{
+				"name": "HP",
+				"type": "String"
+			},
+			{
+				"name": "Att",
+				"type": "String"
+			},
+			{
+				"name": "Def",
+				"type": "String"
+			},
+			{
+				"name": "S.Att",
+				"type": "String"
+			},
+			{
+				"name": "S.Def",
+				"type": "String"
+			},
+			{
+				"name": "Spd",
+				"type": "String"
+			},
+			{
+				"name": "Ph.Sweep",
+				"type": "String"
+			},
+			{
+				"name": "Sp.Sweep",
+				"type": "String"
+			},
+			{
+				"name": "Wall",
+				"type": "String"
+			},
+			{
+				"name": "Ph.Tank",
+				"type": "String"
+			},
+			{
+				"name": "Sp.Tank",
+				"type": "String"
+			},
+			{
+				"name": "PrimaryType",
+				"type": "String"
+			},
+			{
+				"name": "SecondaryType",
+				"type": "String"
+			},
+			{
+				"name": "Ability",
+				"type": "String"
+			},
+			{
+				"name": "Ability Gen",
+				"type": "String"
+			},
+			{
+				"name": "Ability Category",
+				"type": "String"
+			},
+			{
+				"name": "Activation Requirement",
+				"type": "String"
+			},
+			{
+				"name": "Gen",
+				"type": "String"
+			},
+			{
+				"name": "Male%",
+				"type": "String"
+			},
+			{
+				"name": "Female%",
+				"type": "String"
+			},
+			{
+				"name": "against_Normal",
+				"type": "String"
+			},
+			{
+				"name": "against_Fire",
+				"type": "String"
+			},
+			{
+				"name": "against_Water",
+				"type": "String"
+			},
+			{
+				"name": "against_Electric",
+				"type": "String"
+			},
+			{
+				"name": "against_Grass",
+				"type": "String"
+			},
+			{
+				"name": "against_Ice",
+				"type": "String"
+			},
+			{
+				"name": "against_Fight",
+				"type": "String"
+			},
+			{
+				"name": "against_Poison",
+				"type": "String"
+			},
+			{
+				"name": "against_Ground",
+				"type": "String"
+			},
+			{
+				"name": "against_Flying",
+				"type": "String"
+			},
+			{
+				"name": "against_Psychic",
+				"type": "String"
+			},
+			{
+				"name": "against_Bug",
+				"type": "String"
+			},
+			{
+				"name": "against_Rock",
+				"type": "String"
+			},
+			{
+				"name": "against_Ghost",
+				"type": "String"
+			},
+			{
+				"name": "against_Dragon",
+				"type": "String"
+			},
+			{
+				"name": "against_Dark",
+				"type": "String"
+			},
+			{
+				"name": "against_Steel",
+				"type": "String"
+			},
+			{
+				"name": "against_Fairy",
+				"type": "String"
+			},
+			{
+				"name": "Height (m)",
+				"type": "String"
+			},
+			{
+				"name": "Weight (kg)",
+				"type": "String"
+			},
+			{
+				"name": "Capture Rate",
+				"type": "String"
+			},
+			{
+				"name": "Base Happiness",
+				"type": "String"
+			},
+			{
+				"name": "Base Egg Steps",
+				"type": "String"
+			},
+			{
+				"name": "Experience Growth",
+				"type": "String"
+			},
+			{
+				"name": "mega_evolution",
+				"type": "String"
+			},
+			{
+				"name": "overall_legendary",
+				"type": "String"
+			},
+			{
+				"name": "final_stage",
+				"type": "String"
+			},
+			{
+				"name": "regional_form",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
